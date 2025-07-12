@@ -303,9 +303,9 @@
                                             <constraint firstAttribute="width" constant="190" id="logo-width"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¡Bienvenido al Dashboard!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="welcome-label">
-                                        <rect key="frame" x="85.666666666666686" y="178" width="222" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¡Bienvenido al Dashboard!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="welcome-label">
+                                        <rect key="frame" x="20" y="178" width="353" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -327,9 +327,9 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="welcome-label" firstAttribute="top" secondItem="dashboard-logo" secondAttribute="bottom" constant="40" id="welcome-top"/>
-                                    <constraint firstItem="welcome-label" firstAttribute="centerX" secondItem="dashboard-container" secondAttribute="centerX" id="welcome-center"/>
+                                    <constraint firstItem="welcome-label" firstAttribute="leading" secondItem="dashboard-container" secondAttribute="leading" constant="20" id="welcome-leading"/>
+                                    <constraint firstAttribute="trailing" secondItem="welcome-label" secondAttribute="trailing" constant="20" id="welcome-trailing"/>
                                     <constraint firstItem="logout-button" firstAttribute="top" secondItem="welcome-label" secondAttribute="bottom" constant="70" id="logout-top"/>
-                                    <constraint firstItem="logout-button" firstAttribute="centerX" secondItem="dashboard-container" secondAttribute="centerX" id="logout-center"/>
                                     <constraint firstItem="logout-button" firstAttribute="leading" secondItem="dashboard-container" secondAttribute="leading" constant="20" id="logout-leading"/>
                                     <constraint firstAttribute="trailing" secondItem="logout-button" secondAttribute="trailing" constant="20" id="logout-trailing"/>
                                     <constraint firstItem="dashboard-logo" firstAttribute="top" secondItem="dashboard-container" secondAttribute="top" constant="10" id="logo-top"/>
