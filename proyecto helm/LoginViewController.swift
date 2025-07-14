@@ -66,11 +66,12 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func iniciarSesion(_ sender: Any) {
-        // Por ahora, simplemente navegar al dashboard
-        if let vc = storyboard?.instantiateViewController(identifier: "dashboardId") {
-            navigationController?.pushViewController(vc, animated: true)
+        // Ahora navegar al TabBarController
+        if let vc = storyboard?.instantiateViewController(identifier: "tabbar-vc") {
+            vc.modalPresentationStyle = .fullScreen
+            present(vc, animated: true, completion: nil)
         } else {
-            print("no se pudo cargar el dashboard")
+            print("no se pudo cargar el TabBarController")
         }
     }
     
