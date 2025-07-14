@@ -341,8 +341,8 @@
                         <color key="backgroundColor" red="0.04673354389" green="0.07619428768" blue="0.11324839120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="dashboard-container" firstAttribute="top" secondItem="dashboard-safe" secondAttribute="top" constant="50" id="container-top"/>
-                            <constraint firstItem="dashboard-safe" secondAttribute="bottom" secondItem="dashboard-container" secondAttribute="bottom" id="container-bottom"/>
-                            <constraint firstItem="dashboard-safe" secondAttribute="trailing" secondItem="dashboard-container" secondAttribute="trailing" id="container-trailing"/>
+                            <constraint firstItem="dashboard-container" firstAttribute="bottom" secondItem="dashboard-safe" secondAttribute="bottom" id="container-bottom"/>
+                            <constraint firstItem="dashboard-container" firstAttribute="trailing" secondItem="dashboard-safe" secondAttribute="trailing" id="container-trailing"/>
                             <constraint firstItem="dashboard-container" firstAttribute="leading" secondItem="dashboard-safe" secondAttribute="leading" id="container-leading"/>
                         </constraints>
                     </view>
