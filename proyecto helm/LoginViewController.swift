@@ -66,7 +66,9 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func iniciarSesion(_ sender: Any) {
-        // Ahora navegar al TabBarController
+        // Simulación de login con rol (puedes cambiar el rol para probar)
+        let usuario = Usuario(nombre: "Juan", rol: .minero) // Cambia a .supervisor o .administrador para probar
+        SesionUsuario.compartida.usuarioActual = usuario
         if let vc = storyboard?.instantiateViewController(identifier: "tabbar-vc") {
             vc.modalPresentationStyle = .fullScreen
             present(vc, animated: true, completion: nil)

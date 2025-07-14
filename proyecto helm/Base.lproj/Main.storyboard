@@ -288,7 +288,7 @@
         <!--Dashboard Tab Bar Controller-->
         <scene sceneID="tabbar-scene">
             <objects>
-                <tabBarController id="tabbar-vc" sceneMemberID="viewController">
+                <tabBarController id="tabbar-vc" customClass="CustomTabBarController" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="tabbar-bar"/>
                     <connections>
                         <segue destination="inicio-vc" kind="relationship" relationship="viewControllers" id="tabbar-inicio-segue"/>
@@ -323,6 +323,12 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rol actual: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbl-rol">
+                                        <rect key="frame" x="20" y="220" width="353" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="inicio-label" firstAttribute="top" secondItem="inicio-logo" secondAttribute="bottom" constant="40" id="inicio-label-top"/>
@@ -330,6 +336,9 @@
                                     <constraint firstAttribute="trailing" secondItem="inicio-label" secondAttribute="trailing" constant="20" id="inicio-label-trailing"/>
                                     <constraint firstItem="inicio-logo" firstAttribute="top" secondItem="inicio-container" secondAttribute="top" constant="10" id="inicio-logo-top"/>
                                     <constraint firstItem="inicio-logo" firstAttribute="centerX" secondItem="inicio-container" secondAttribute="centerX" id="inicio-logo-center"/>
+                                    <constraint firstItem="lbl-rol" firstAttribute="top" secondItem="inicio-label" secondAttribute="bottom" constant="20" id="lbl-rol-top"/>
+                                    <constraint firstItem="lbl-rol" firstAttribute="leading" secondItem="inicio-container" secondAttribute="leading" constant="20" id="lbl-rol-leading"/>
+                                    <constraint firstAttribute="trailing" secondItem="lbl-rol" secondAttribute="trailing" constant="20" id="lbl-rol-trailing"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -342,13 +351,15 @@
                             <constraint firstItem="inicio-container" firstAttribute="leading" secondItem="inicio-safe" secondAttribute="leading" id="inicio-container-leading"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Inicio" image="home" id="inicio-tab"/>
+                    <tabBarItem key="tabBarItem" title="Inicio" image="house.fill" id="inicio-tab"/>
+                    <connections>
+                        <outlet property="lblRol" destination="lbl-rol" id="lbl-rol-outlet"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="inicio-first" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1200" y="4"/>
         </scene>
-        <!--Perfil View Controller-->
         <scene sceneID="perfil-scene">
             <objects>
                 <viewController storyboardIdentifier="perfilId" id="perfil-vc" customClass="PerfilViewController" customModule="proyecto_helm" customModuleProvider="target" sceneMemberID="viewController">
@@ -391,7 +402,7 @@
                             <constraint firstItem="perfil-container" firstAttribute="leading" secondItem="perfil-safe" secondAttribute="leading" id="perfil-container-leading"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Perfil" image="person" id="perfil-tab"/>
+                    <tabBarItem key="tabBarItem" title="Perfil" image="person.fill" id="perfil-tab"/>
                     <connections>
                         <outlet property="btnCerrarSesion" destination="logout-button" id="logout-outlet"/>
                     </connections>
