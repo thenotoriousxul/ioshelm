@@ -411,6 +411,87 @@
             </objects>
             <point key="canvasLocation" x="1400" y="4"/>
         </scene>
+        <scene sceneID="minero-scene">
+            <objects>
+                <viewController storyboardIdentifier="mineroId" id="minero-vc" customClass="MineroViewController" customModule="proyecto_helm" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="minero-view">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vista Minero" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="minero-label">
+                                <rect key="frame" x="20" y="400" width="353" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="minero-safe"/>
+                        <color key="backgroundColor" red="0.04673354389" green="0.07619428768" blue="0.11324839120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="minero-label" firstAttribute="centerX" secondItem="minero-view" secondAttribute="centerX" id="minero-centerX"/>
+                            <constraint firstItem="minero-label" firstAttribute="centerY" secondItem="minero-view" secondAttribute="centerY" id="minero-centerY"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Minero" image="person.fill" id="minero-tab"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="minero-first" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1600" y="4"/>
+        </scene>
+        <scene sceneID="supervisor-scene">
+            <objects>
+                <viewController storyboardIdentifier="supervisorId" id="supervisor-vc" customClass="SupervisorViewController" customModule="proyecto_helm" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="supervisor-view">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vista Supervisor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="supervisor-label">
+                                <rect key="frame" x="20" y="400" width="353" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="supervisor-safe"/>
+                        <color key="backgroundColor" red="0.04673354389" green="0.07619428768" blue="0.11324839120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="supervisor-label" firstAttribute="centerX" secondItem="supervisor-view" secondAttribute="centerX" id="supervisor-centerX"/>
+                            <constraint firstItem="supervisor-label" firstAttribute="centerY" secondItem="supervisor-view" secondAttribute="centerY" id="supervisor-centerY"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Supervisor" image="person.2.fill" id="supervisor-tab"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="supervisor-first" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1800" y="4"/>
+        </scene>
+        <scene sceneID="miCasco-scene">
+            <objects>
+                <viewController storyboardIdentifier="miCascoId" id="miCasco-vc" customClass="MiCascoViewController" customModule="proyecto_helm" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="miCasco-view">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vista Mi Casco" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="miCasco-label">
+                                <rect key="frame" x="20" y="400" width="353" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="miCasco-safe"/>
+                        <color key="backgroundColor" red="0.04673354389" green="0.07619428768" blue="0.11324839120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="miCasco-label" firstAttribute="centerX" secondItem="miCasco-view" secondAttribute="centerX" id="miCasco-centerX"/>
+                            <constraint firstItem="miCasco-label" firstAttribute="centerY" secondItem="miCasco-view" secondAttribute="centerY" id="miCasco-centerY"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Mi Casco" image="wrench.fill" id="miCasco-tab"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="miCasco-first" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2000" y="4"/>
+        </scene>
     </scenes>
     <resources>
         <image name="LOGO.png" width="624" height="594"/>
